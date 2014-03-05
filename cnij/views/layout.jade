@@ -1,0 +1,38 @@
+doctype html
+html(lang="ZN")
+	head
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width ,initial-scale=1.0, user-scalable=no" />
+		title 岑锦超的个人主页
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		block css
+	body
+		block content
+		div.span2
+			nav.left
+				ul.nav
+					li
+						a.blockA(href = '/r')
+							div.ui Resume
+							i.icon-right
+							div.word 我的简历
+					li
+						a.blockA(href = '/r') 
+							div.ui Photo
+							i.icon-right
+							div.word 相册
+					li
+						a.blockA(href = '/r') 
+							div.ui Music
+							i.icon-right
+							div.word 音乐播放器
+					li
+						a.blockA(href = '/r') 
+							div.ui Other
+							i.icon-right
+							div.word 其他
+		div.span10
+			block resume
+		block other
+		div.clear
+		script(src='http://libs.baidu.com/jquery/2.0.0/jquery.min.js')
+		block js
