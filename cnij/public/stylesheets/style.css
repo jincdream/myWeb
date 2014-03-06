@@ -140,7 +140,7 @@ a {
 	-o-transform: translateX(-100%);
 	transform: translateX(-100%);
 	background-color: rgba(41,147,188,0.3);
-	box-shadow: 4px 0 5px rgba(40,40,40,.5);
+	box-shadow: 4px 0 5px rgba(40,40,40,0.5);
 }
 .left,.nav{
 	height:100%;
@@ -171,19 +171,19 @@ a {
 	transform: translateX(0);
 }
 .ui{
-	border: 4px solid rgba(255,255,255,.4);
+	border: 4px solid rgba(255,255,255,0.4);
 	line-height: 72px;
 	text-align: center;
-	text-shadow:4px 0 5px rgba(40,40,40,.5);
+	text-shadow:4px 0 5px rgba(40,40,40,0.5);
 	font-size: 1.8rem;
 	height: 72px;
 	width: 72px;
 	border-radius: 10px;
-	box-shadow: 2px 0 15px rgba(40,40,40,.5);
+	box-shadow: 2px 0 15px rgba(40,40,40,0.5);
 	background-color: rgba(39,40,34,.4);
 }
 .ui:hover{
-	background-color: rgba(245,237,198,.2);
+	background-color: rgba(245,237,198,0.2);
 /*
 	-webkit-animation: douDong 0.2s  linear 0 infinite alternate;
 	-moz-animation: douDong 0.2s  linear 0 infinite alternate;

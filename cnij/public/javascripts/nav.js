@@ -1,3 +1,3 @@
 (function (){
-	$('.nav').addClass('leftShow');
+	
 })();
