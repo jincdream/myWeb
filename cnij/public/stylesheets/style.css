@@ -90,7 +90,9 @@ a {
 	-o-transform: rotate(20deg);
 	transform: rotate(20deg); }
 }
-.shade,.nav,.icon-right,.word,.resume article li,.myC div,.resume article,.ui{
+.shade,.nav,.icon-right,.word,.resume,
+.resume article li,.myC div,.resume article,
+.ui,.halfDown p{
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	-ms-transform-style: preserve-3d;
@@ -115,7 +117,7 @@ a {
 	text-align: center;
 }
 .enter{
-	padding:60px 0 0; 
+	padding: 60px 0 0; 
 	color: #fff;
 	margin: 10% auto 0 auto;
 	width: 180px;
@@ -226,21 +228,22 @@ a {
 }
 .resume{
 	position: relative;
+	top:-500px;
 }
 .resume h2{
 	color: #fff;
-	padding: 4px 0 4px 3px;
+	padding: 10px 0 10px 10px;
 	box-shadow: 0 2px 4px rgba(94,94,94,.8);
 }
 .resume article{
 	float:left;
 	width:23%;
-	min-width: 300px;
-	margin:60px 1% 20px 1%;
+	min-width: 260px;
+	margin:20px 1% 20px 1%;
 	color:rgba(247,234,196,.8);
 	overflow: hidden;
 	background-color: rgba(57,75,88,.5);
-	height: 450px;
+	height: 430px;
 }
 .resume h2,.resume ul{
 	width:100%;
@@ -263,23 +266,26 @@ a {
 	height: 78px;
 	line-height: 78px;
 }
-.myA h2,.myC h2{
+.myA h2,.myC h2,.my2013 h2{
 	background-color:rgba(36,36,36,.5);
 }
-.myB h2,.myD h2{
+.myB h2,.myD h2,.my2012 h2,.my2014 h2{
 	background-color:rgba(98,98,98,.5);
 }
 .resume article li{
 	padding:10px 0 10px 20px;
 	font-size:2rem;
 }
+.myA .long{
+	font-size:1.6rem;
+}
 .resume article li span{
 	margin-left: 2%;
 }
-.myA:hover,.myC:hover{
+.myA:hover,.myC:hover,.my2013:hover{
 	background-color: rgba(139,3,3,.5);
 }
-.myB:hover,.myD:hover{
+.myB:hover,.myD:hover,.my2012:hover,.my2014:hover{
 	background-color: rgba(118,5,82,.5);
 }
 .myC{
@@ -370,11 +376,11 @@ a {
 	transform: translate(-20px, 5px);
 }
 .myC:hover>.c{
-	-webkit-transform: translate(-10px, -40px);
-	-moz-transform: translate(-10px, -40px);
-	-ms-transform: translate(-10px, -40px);
-	-o-transform: translate(-10px, -40px);
-	transform: translate(-10px, -40px);
+	-webkit-transform: translate(-10px, -35px);
+	-moz-transform: translate(-10px, -35px);
+	-ms-transform: translate(-10px, -35px);
+	-o-transform: translate(-10px, -35px);
+	transform: translate(-10px, -35px);
 }
 .myC:hover>.js{
 	-webkit-transform: scale(1.5, 1.5);
@@ -384,5 +390,30 @@ a {
 	transform: scale(1.5, 1.5);
 }
 /***/
+.halfUp,.halfDown{
+	position: relative;
+	width: 100%;
+}
+.halfUp img{
+	margin: 20px 20%;
+	border: 2px solid #fff;
+	position: absolute;
+	width: 60%;
+}
+.halfDown p{
+	font-size:2rem;
+	text-align: center;
+	padding: 5px 2px;
+}
+.halfUp{
+	height: 60%;
+}
+.halfDown{
+	height: 30%;
+}
+.halfDown p:hover{
+	background-color: rgba(10,201,193,.3);
+}
+/**/
 .clear:after {content:'\200B'; display:block; height:0; clear:both;}
 .clear{zoom:1;}

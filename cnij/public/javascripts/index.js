@@ -48,7 +48,7 @@ jQuery.Topic = function (id) {
 		up[1] = event.clientY;
 		console.log(up+"up");
 	});
-*/	//这里只能用原生js写 touch事件；
+	//这里只能用原生js写 touch事件；
 
 	//订阅模式
 
@@ -67,7 +67,7 @@ jQuery.Topic = function (id) {
 				shade.animate({
 					top: '-100%'
 				});
-	});
+	});*/
 	shade.find('a').eq(0).on('click',function (event) {
 		event.preventDefault();
 		shade.animate({
