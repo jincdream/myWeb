@@ -13,8 +13,14 @@ jin.index = function(req, res) {
 	console.log(bl);
 };
 jin.resume = function(req, res) {
-	res.render('resume',{
+	res.render('resume', {
 		show: "leftShow"
+	});
+};
+jin.photo = function(req, res) {
+	res.render('myphoto', {
+		show: "leftShow",
+		resume: "resume"
 	});
 };
 exports.jin = jin;
