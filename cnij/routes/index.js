@@ -23,4 +23,8 @@ jin.photo = function(req, res) {
 		resume: "resume"
 	});
 };
+jin.jiu = function(req, res) {
+	res.render('jiu');
+	/*(res.sendfile('/demo/myWeb/cnij/views/jiu.html');*/
+};
 exports.jin = jin;
