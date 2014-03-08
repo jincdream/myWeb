@@ -412,6 +412,9 @@ a {
 }
 /*-------------------------------------photo------------------------------------*/
 /*翻页效果*/
+.firfoxBug{
+	overflow: hidden;
+}
 .stage,.stage ul{
 	position:relative;
 	width: 100%;
@@ -540,6 +543,8 @@ a {
 	color: rgba(246,223,151,.8);
 }
 .ado{
+	position: absolute;
+	top: -100%;
 	opacity: 0;
 }
 /*

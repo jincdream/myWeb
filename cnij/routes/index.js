@@ -20,7 +20,8 @@ jin.resume = function(req, res) {
 jin.photo = function(req, res) {
 	res.render('myphoto', {
 		show: "leftShow",
-		resume: "resume"
+		resume: "resume",
+		firfoxBug: "firfoxBug"
 	});
 };
 jin.jiu = function(req, res) {
