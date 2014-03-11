@@ -1,0 +1,217 @@
+	body,audio,ul,li,img,section,span,a,input{
+		padding:0;
+		margin:0;
+		border:0;
+		font-weight:normal;
+		font-size:12px;
+		font-family: Arial, Helvetica, sans-serif; 
+		list-style:none;
+	}
+	body{
+		background-image:url(bg0.jpg);
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		background-attachment:fixed;
+	}
+	@font-face
+	{
+		font-family: myFirstFont;
+		src: url('aaa.ttf'); 
+	}
+
+	
+	#main{
+		width:960px;
+		margin:40px auto;
+		position:relative;
+		
+	}
+	
+	.btn{
+		
+		width:320px;
+		height:54px;
+		margin:0 auto;
+		position:relative;
+		padding-left:100px;
+		padding-top:2px;
+		background:#ce5368;
+		border:1px solid rgba(255,255,255,.3);
+		border-radius:0 0 10px 10px;
+		box-shadow:0px -15px 15px rgba(0,0,0,.5),
+					0px 3px 10px black;
+		z-index:97;
+	}
+
+	.btn li{
+		
+		width:50px;
+		height:50px;
+		
+		float:left;
+		border:1px solid #fff;
+		margin-left:2px;
+		text-align:center;
+		border-radius:25px;
+	}
+	
+	.btn li:hover{
+		background:rgba(15,13,15,0.4)
+		}
+
+	#div1{
+		
+		width:100px;
+		height:4px;
+		border:1px solid #fff;
+		border-radius:8px;
+		float:right;
+		position:absolute;
+		z-index:98;
+		
+		top:322px;
+		right:290px;
+	}
+	#div2{
+		
+		width:100px;
+		height:4px;
+		
+	}
+	
+	#volum
+	{
+		width:11px;
+		height:11px;
+		position:absolute;
+		top:-5px;
+		left:91px;
+		background:#fff;
+		border-radius:5px;
+		border:1px #777 solid;
+	}
+	#img{
+		width:412px;
+		height:292px;
+		margin:0 auto;
+		border:4px rgba(255,255,255,.5) solid;
+		border-bottom:none;
+		border-radius:10px 10px 0 0;
+		overflow:hidden;
+		/*background:url(a.jpg) no-repeat fixed top;*/
+		position:relative;
+	}
+	#img img{
+		opacity:0;
+		position:absolute;
+		}
+	.hide{
+		border-radius:10px 10px 0 0;
+		
+		position:absolute;
+		top:4px;
+		background:black;
+		opacity:.85;
+		z-index:99;
+		width:412px;
+		height:292px;
+	}
+
+	#list{
+		clear:both;
+		position:relative;
+		width:418px;
+		background:rgba(206,83,104,.5);
+		margin:0 auto;
+		top:-2px;
+		padding:4px 0 0 0;
+		border-left:1px rgba(0,0,0,.7) solid;
+		border-right:1px rgba(0,0,0,.7) solid;
+	}
+	#more{
+		z-index:100;
+		background:none;
+		position:relative;
+		float:left;
+		top:8px;
+		left:296px;
+		width:42px;
+		height:42px;
+		border:1px solid #fff;
+		color:#fff;
+		border-radius:21px;
+		
+	}
+	#more:hover{
+		background:rgb(255,255,255);
+		color:rgba(51,51,51,1);
+	}
+	#list li{
+		height:65px;
+		border-bottom:1px rgba(0,0,0,.4) solid;
+		box-shadow:0 2px 11px rgba(0,0,0,.4);
+		padding:15px 0 0 20px;
+	}
+	.singer{
+		height:42px;
+		width:42px;
+		border:4px rgba(0,0,0,.6) solid;
+		border-radius:25px;
+		float:left;
+		overflow:hidden;
+		box-shadow:2px 2px 5px rgba(255,255,255,.8);
+	}
+	.h{
+		display:none;
+		position:relative;
+	}
+	.name{
+		position:relative;
+		top:12px;
+		left:35px;
+		height:42px;
+		font-family:"方正显仁简体";
+		font-family: myFirstFont;
+		font-size:25px;
+		color:#feebb5;
+		float:left;
+		text-shadow:1px 1px 5px rgba(255,255,255,.25),
+		-1px -1px 5px rgba(255,255,255,.25);
+	}
+	
+	
+	.btnwait,.btnplaying,.btnready{
+		width:52px;
+		height:28px;
+		float:right;
+		position:absolute;
+		
+		border:1px #fff solid;
+		color:#fff;
+		clear:both;
+		
+	}
+	.btnbtn{
+		
+		width:52px;
+		height:28px;
+		
+		position:absolute;
+		top:28px;
+		right:10px;	
+	}
+	.btnbtn{
+		overflow:hidden;	
+	}
+	.btnready{
+		left:54px;
+		}
+	.btnwait{
+		
+		background:#f583ae;
+		
+	}
+	
+	.btnplaying,.btnready{
+		background:#8a1240;
+	}

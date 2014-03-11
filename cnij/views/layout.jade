@@ -1,13 +1,12 @@
 doctype html
-html(lang="ZN")
+html(lang="zh-cn")
 	head
 		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width ,initial-scale=1.0, user-scalable=no" />
-		<link rel="shortcut icon" href="/images/favicon.ico" />
-		<link href='http://www.youziku.com/webfont/CSS/36b77b299f49f8d4211381b7aedfd167' rel='stylesheet' type='text/css'/>
 		title 岑锦超的个人主页
+		<link rel="shortcut icon" href="/images/favicon.ico" />
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		block css
-	body(class='firfoxBug')
+	body(class='#{firfoxBug}')
 		block content
 		div.span2
 			nav.left
@@ -32,6 +31,11 @@ html(lang="ZN")
 							div.ui Other
 							i.icon-right
 							div.word Doing
+					li(class='#{back}')
+						a.blockA(href = '/p') 
+							div.ui Back
+							i.icon-right
+							div.word 继续音乐
 		div.span10
 			block resume
 			block photo

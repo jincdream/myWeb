@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test1</title>
+<style>
+html{
+	font-size:62.5%; /* 10÷16=62.5% */
+	}
+body{
+	
+	font-size:12px;
+	
+	font-size:1.2rem ; /* 12÷10=1.2 */
+	
+	}
+@font-face
+{
+	font-family:myFont;
+	src: url('Exo-Regular.otf');
+}
+
+body,div,ul,li,p,mark,h1,h2,h3,h4,h5,h6{
+	list-style:none;
+	
+	margin:0;
+	padding:0;
+	font-size:10px;
+	}
+h1{display:none;}
+.bg{
+	width:100%;
+	height:1204px;
+	background:url(bg/bg1.gif) repeat-x;
+	}
+#body{
+	width:960px;
+	margin:0 auto;
+	}
+#logo{
+	margin:20px 0;
+	}
+.mainTop{
+	height:810px;
+	width:960px;
+	background:url(bg/bg2.gif) repeat-x;
+	overflow:hidden;
+	}
+#nav{
+	height:46px;
+	}
+#nav li:hover{
+	background:#F63;
+	color:#FFF;
+	}
+#nav li{
+	color:#999;
+	padding:12px 18px 0;
+	float:left;
+	border-right:1px solid #EEE;
+	height:34px;
+	font-size:1.8rem;
+	font-family:myFont;
+	}
+#img{
+	clear:left;
+	margin:20px auto 5px;
+	width:918px;
+	height:350px;
+	background:red;
+	}
+.iconA{
+	width:110px;
+	height:22px;
+	margin:0 auto;
+	
+	}	
+	
+.iconA li{
+	width:16px;
+	height:16px;
+	margin:0 2px;
+	border-radius:8px;
+	border:1px solid rgba(204,204,204,.8);
+	background:-webkit-gradient(linear,left top,left bottom,from(#FFF),to(#e9e9e9));
+	background:-moz-linear-gradient(top,#FFF,#e9e9e9);
+	float:left;
+	}
+.iconA li:hover{
+	background:-webkit-gradient(linear,left top,left bottom,from(#e9e9e9),to(#fff));
+	background:-moz-linear-gradient(top,#e9e9e9,#fff);
+	}	
+#on{
+	background:-webkit-gradient(linear,left top,left bottom,from(#F60),to(#F90));
+	background:-moz-linear-gradient(top,#F60,#F90);
+	}
+#slogan{
+	height:60px;
+	padding:20px 30px;
+	
+	}
+#slogan p{
+	font-size:2.4rem;
+	color:#444;
+	font-family:myFont;
+	width:783;
+	float:left;
+	}
+mark{
+	color:#de5328;
+	background:none;
+	font-size:2.5rem;
+	}
+.import{
+	float:right;
+	}
+.import:hover{
+		width:108px;
+		height:66px;
+		border-radius:5px;
+	overflow:hidden;
+	box-shadow:0px 0px 6px rgba(255,102,0,1);
+	}
+#con{
+	margin-left:36px;
+	}
+.ct{
+	width:195px;
+	height:200px;
+	
+	margin:40px 36px 0 0;
+	float:left;
+	}
+.ct h5{
+	font-size:2.2rem;
+	margin-bottom:18px;
+	font-family:myFont;
+	color:#444;
+	}
+.ct p{
+	font-size:1.4rem;
+	color:#666;
+	}
+.ct p img{
+	padding-right:12px;
+
+	}
+.ct .btn{
+	margin-top:22px;
+	}
+#bottom{
+	clear:left;
+	withd:960px;
+	height:230px;
+	background:#FfF;
+	position:relative;
+	top:30px;
+	
+	}
+#bottom .last{
+	
+	background:#1e1e1e;
+	withd:925px;
+	height:210px;
+	margin:10px;
+	top:10px;
+	position:relative;
+	border:1px solid #000;
+	}
+.last ul{
+	padding-left:24px;
+	}
+.last ul li{
+	margin:20px 0;
+	padding:0 24px;
+	
+	height:165px;
+	
+	float:left;
+	}
+.box1,.box4{
+	width:120px;
+	}
+.box1{
+	border-right:#0d0d0d 1px solid;
+	}	
+.box2,.box3{
+	border-left:#323232 1px solid;
+	border-right:#0d0d0d 1px solid;
+	}
+.box4{
+	border-left:#323232 1px solid;
+	}
+.box2,.box3{
+	width:235px;
+	
+	}
+
+#bottom,#bottom .last,.mainTop{	
+	border-radius:10px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+	}
+.box1 h2{
+	color:#dadada;
+	font-size:2rem;
+	}
+#linkFoot{
+	padding:0;
+	}
+#linkFoot li{
+	color:#de5328;
+	font-size:1.7rem;
+	height:20px;
+	margin:0px;
+	padding:1px 0 0 35px;
+	border-top:#323232 1px solid;
+	border-bottom:#0d0d0d 1px solid;
+	float:none;
+	}
+</style>
+</head>
+
+<body class="bg">
+<section id="body">
+	<h1>homeworkPage</h1>
+	<div id="logo">
+    	<img src="bg/logo.gif" />
+    </div>
+
+	<article class="mainTop">    
+        <nav >
+            <ul id="nav">
+                <li>Home</li>
+                <li>Features</li>
+                <li>Pages</li>
+                <li>Blog</li>
+                <li>Portfolio</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+            <div id="img">
+                <img src="bg/img.gif" />
+            </div>
+         <article>
+            <ul class="iconA">
+                <li></li>
+                <li></li>
+                <li id="on"></li>
+                <li></li>
+                <li></li>
+            </ul>
+          </article>
+          <article id="slogan">
+                <p>
+                	This is space that I call <mark>slogan area</mark>.It's Purpose is to drive your <mark>att-<br />ention</mark>  to something 							impoportant,like button that will say <mark>"buy me!"</mark>.
+                </p>
+                <div class="import">
+                	<img src="bg/imp.gif" />
+           		</div>
+           </article>
+           
+			<section id="con">
+                <article class="ct">
+                    <h5>Proper coding</h5>
+                    <p><img src="bg/img_22.gif" align="left"/>Etherna looks great in all the major browers even old ones.It's been tested with IE7,Ie8,Ie9,FirFox3,<br/>FirFox4,Chromes and Opera
+                    </p>
+                    <img class="btn" src="bg/btn.gif" />
+                </article>
+                
+                <article class="ct">
+                    <h5>Attention to</h5>
+                    <p><img src="bg/img_19.gif" align="left"/>Etherna looks great in all the major browers even old ones.It's been tested with IE7,Ie8,Ie9,FirFox3,<br/>FirFox4,Chromes and Opera
+                    </p>
+                    <img class="btn" src="bg/btn.gif" />
+                </article>
+                
+                <article class="ct">
+                    <h5>Moredern and</h5>
+                    <p><img src="bg/img_24.gif" align="left"/>Etherna looks great in all the major browers even old ones.It's been tested with IE7,Ie8,Ie9,FirFox3,<br/>FirFox4,Chromes and Opera
+                    </p>
+                    <img class="btn" src="bg/btn.gif" />
+                </article>
+                
+                <article class="ct">
+                    <h5>Smart and flexble</h5>
+                    <p><img src="bg/img_26.gif" align="left"/>Etherna looks great in all the major browers even old ones.It's been tested with IE7,Ie8,Ie9,FirFox3,<br/>FirFox4,Chromes and Opera
+                    </p>
+                    <img class="btn" src="bg/btn.gif" />
+                </article>
+            </section>
+	</article>
+     <div id="bottom">
+    	<div class="last">
+        	<ul>
+            	<li class="box1">
+                	<nav>
+                    	<h2>Pages</h2>
+                        <ul id="linkFoot">
+                        	<li>Home</li>
+                            <li>Features</li>
+                            <li>Pages</li>
+                            <li>Blog</li>
+                            <li>Portfolio</li>
+                            <li>Contact</li>
+                        </ul>
+                    </nav>
+                </li>
+                <li class="box2"></li>
+                <li class="box3"></li>
+                <li class="box4"></li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+   
+</body>
+</html>

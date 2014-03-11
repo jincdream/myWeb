@@ -1,0 +1,146 @@
+body,section,img,p,ul,li,header,h1,h2,h3,h4,h5,h6,div,article,a,aside{
+	margin:0;
+	padding:0;
+	border:0;
+	list-style:none;
+	font-family:pFont;
+	}
+a:link,a:visited,a:hover,a:active{
+	text-decoration: none;
+}
+body{
+	background:#666;
+	}
+@font-face{
+	font-family:titleFont;
+	src:url(Walkway_Bold.ttf);
+	}
+@font-face{
+	font-family:pFont;
+	src:url(MerriweatherSans-Light.otf);
+	}
+#left p{
+	text-align:justify;
+	}
+#by{
+	width:1024px;
+	margin:0 auto;
+	background:#F4FFF4;
+	}
+.nav{
+	position:relative;
+	clientWidth:300px;}
+/*header star*/
+.nav a{	
+	padding-top:6px;
+	height:34px;
+	color:#fff;
+	display:block;
+	}
+.nav a:hover{
+	background:#FF0;
+	background:-moz-linear-gradient(90deg,#FCBF19,#FF0);
+	background:-webkit-gradient(linear,left top,left bottom,from(#FC0),to(#FF0));
+	color:#333;
+	text-shadow:#FFF -1px -1px 2px;
+	}
+
+#head{
+	background:#090 url(bg.jpg) no-repeat top scroll;
+	height:250px;
+	width:1024px;
+	box-shadow:#666 0 0 3px 3px;
+	}
+#head h1{
+	text-align:right;
+	color:#FFf;
+	padding:50px 45px 0 0;
+	font-family:titleFont;
+	font-size:40px;
+	}
+.nav{
+	position:relative;
+	width:1024px;
+	height:40px;
+	top:118px;
+	background:#390;
+	}
+.nav ul{
+	width:600px;
+	margin:0 auto;
+	height:30px;
+	}
+.nav li{
+	text-align:center;
+	float:left;
+	width:100px;
+	height:25px;
+	font-size:22px;
+	}
+/*left star*/
+#left{
+	/*background:rgba(51,255,102,.2);*/
+	float:left;
+	width:750px;
+	color:#006532;
+	font-size:22px;
+	}
+.content{
+	padding:15px 0 30px 20px;
+	}
+.content h3{
+	font-size:34px;
+	margin-bottom:15px;
+	width:735px;
+	border-bottom:#333 2px solid;
+	padding-bottom:10px;
+	}	
+.content img{
+	border:3px #006600 solid;
+	float:left;
+	margin:0 20px 10px 0;
+}
+/*right star*/
+#right{
+	font-family:titleFont;
+	margin-top:40px;
+	float:right;
+	width:220px;
+	background:rgba(51,153,0,.8);;
+	color:#fff;
+	padding:30px 15px 30px 20px;
+	border-radius:35px 0 0 35px;
+	box-shadow:#666 -1px 3px 2px;
+	}
+.asiderP{
+	margin-bottom:70px;
+	}
+.asiderP h5{
+	font-size:22px;
+	}
+.lingkMore{
+	width:85px;
+	height:40px;
+	font-size:16px;
+	padding-bottom:3px;
+	margin-top:5px;
+	float:right;
+	}
+.lingkMore a{
+	display:block;
+	color:#FC0;
+	}
+.lingkMore a:hover{
+	border-bottom:3px #FC0 solid;
+	}
+/*footer star*/
+#footer{
+	font-size:12px;
+	clear:both;
+	background:#fff;
+	text-align:center;
+	padding-top:15px;
+	height:50px;
+	border-top:#333 20px solid;
+	}
+

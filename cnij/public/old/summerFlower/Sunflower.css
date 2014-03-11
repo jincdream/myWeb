@@ -1,0 +1,129 @@
+@charset "utf-8";
+@font-face{
+	font-family:sun;
+	src:url(PTC55F.ttf);
+	}
+@keyframes myfirst
+{
+0%   {background: rgb(255,255,0); right:20px; bottom:0px;}
+30%  {background: rgb(255,204,0); right:0px; bottom:20px;}
+60%  {background: rgb(255,153,0); right:10px; bottom:0px;}
+75%  {background: rgb(255,102,0);right:0px; bottom:20px;}
+100% {background: rgb(255,255,0); right:20px; bottom:5px;}
+}
+::selection{
+	background:#F90;
+	color:#F30;
+	}
+::-moz-selection{
+	background:rgba(255,51,51,1);
+	color:#fff;
+	}
+/* CSS Document */
+body,ul,h1,h2,li,p{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+body{
+	background:url(i/bg.gif) repeat fixed;
+	}
+.by{
+	background:#FFF;
+	border-radius:0 55px 0 55px;
+	padding:20px 35px;
+	margin:20px auto;
+	}
+#footer,#header,.nav,.by{
+	width:835px;}
+/*header*/
+#header{
+	height:250px;
+	background:#06F url(i/top-bg.jpg) no-repeat;
+	overflow:hidden;
+	border-radius:35px 0 0 0;
+	color:#FFF;
+	}
+#header h1,#content h2{
+	font-family:sun;
+	}
+#header h1{
+	margin:45px 0 10px 450px;
+	font-size:30px;
+	}
+#header p{
+	margin:0 0 3px 450px;
+	font-size:13px;
+	}
+/*nav*/
+.nav{
+	height:40px;
+	font-family:sun;
+	background:#F90;
+	border-radius:0 0 35px 0;
+	}
+.nav ul li{
+	color:#FFF;
+	float:left;
+	padding:10px 15px;
+	transition:all 0.4s linear;
+	background:#F90;
+	}
+.nav ul li:hover{
+	background:#F30;
+	}
+/*content-left*/
+#content{
+	float:left;
+	width:500px;
+	padding:40px 0 40px 25px;
+	}
+#content p{
+	margin:5px 0 15px 0;
+	text-indent:40px;
+	}
+#content span{
+	padding-top:20px;
+	font-size:14px;
+	}
+/*aside*/
+.ad{
+	float:right;
+	margin:120px 80px 0 0 ;
+	}
+.ad ul li{
+	height:25px;
+	width:160px;
+	color:#FFF;
+	background:rgba(51,153,204,.4);
+	padding-top:5px;
+	border-bottom:#FFF 1px solid;
+	text-align:center;
+	transition:all 0.6s linear;
+	}
+.ad ul li:hover{
+	background:#09F;
+	}
+.ad ul li:first-of-type{
+	border-radius:0 20px 0 0;
+	}
+.ad ul li:last-of-type{
+	border-radius:0 0 0 20px;
+	}
+/*footer*/
+#footer{
+	clear:both;
+	text-align:right;
+	opacity:.4;
+	}
+/*sun*/
+.sun{
+	position:absolute;
+	right:20px;
+	bottom:5px;
+	width:50px;
+	height:50px;
+	background:#FC0;
+	border-radius:25px;
+	animation:myfirst 3s infinite;
+	}

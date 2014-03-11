@@ -1,31 +1,45 @@
 var ip = [];
 var jin = {};
 jin.index = function(req, res) {
-	var bl = ip.some(function _ip(item, index, arry) {
+	var bl = ip.some(function (item, index, arry) {
 		return item == req.ip;
 	});
 	if (!bl)
 		ip.push(req.ip);
 	res.render('index', {
 		order: ip.length,
-		show: ""
+		show: "",
+		back: "hidden"
 	});
 	console.log(bl);
 };
 jin.resume = function(req, res) {
 	res.render('resume', {
-		show: "leftShow"
+		show: "leftShow",
+		back: "hidden"
 	});
 };
 jin.photo = function(req, res) {
 	res.render('myphoto', {
 		show: "leftShow",
 		resume: "resume",
+		back: "back"
+	});
+};
+//ajax ↓
+jin.jiu = function(req, res) {
+	res.render('jiu',{
 		firfoxBug: "firfoxBug"
 	});
 };
-jin.jiu = function(req, res) {
-	res.render('jiu');
-	/*(res.sendfile('/demo/myWeb/cnij/views/jiu.html');*/
+jin.listS = function(req, res) {
+	res.render('listS');
 };
+jin.listY = function(req, res) {
+	res.render('listY');
+};
+jin.back = function(req,res){
+	res.render('back');
+};
+/*(res.sendfile('/demo/myWeb/cnij/views/jiu.html');*/
 exports.jin = jin;

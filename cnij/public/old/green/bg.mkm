@@ -1,0 +1,8 @@
+<MKM version="2.0" imageFileUrl="file:///C:/Users/Jin/Desktop/green/bg.jpg">
+  <Marks>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="10081887" offsetX="25" offsetY="10" x="582" y="187"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="13890734" offsetX="25" offsetY="10" x="711" y="167"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="15137939" offsetX="25" offsetY="10" x="382" y="192"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="6008882" offsetX="25" offsetY="10" x="45" y="173"/>
+  </Marks>
+</MKM>

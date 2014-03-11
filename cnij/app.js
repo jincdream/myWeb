@@ -32,7 +32,9 @@ app.get('/', routes.jin.index);
 app.get('/r', routes.jin.resume);
 app.get('/p', routes.jin.photo);
 app.get('/jiu', routes.jin.jiu);
-app.get('/users', user.list);
+app.get('/back', routes.jin.back);
+app.get('/p/listS',routes.jin.listS);
+app.get('/p/listY',routes.jin.listY);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

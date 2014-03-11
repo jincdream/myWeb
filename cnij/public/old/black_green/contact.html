@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>contact</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+ <div class="by">
+    <header id="header">
+        <h1 class="logo">
+            <img src="img/logo.png" alt="Progress"/>
+        </h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html"><p>HOME</p><span>WELCOME!</span><img src="img/home.png" /></a></li>
+                <li><a href="news.html"><p>NEWS</p><span>FRESH</span><img src="img/pencil.png" /></a></li>
+                <li><a href="services.html"><p>SERVICE</p><span>FOR U</span><img src="img/page.png" /></a></li>
+                <li><a href="product.html"><p>PRODUCTS</p><span>THE BEST</span><img src="img/set.png" /></a></li>
+                <li class="on"><a href="#"><p>CONTACTS</p><span>OUR ADDRESS</span><img src="img/massege.png" /></a></li>
+            </ul>
+        </nav>
+   </header>
+   <div class="gbg"></div>
+   <section id="ctcCont">
+        <article class="formC">
+            <header><h2>Contact form</h2></header>
+            <form id="contactForm">
+                <span>Your Name:</span><input type="text" name="name" value="" autofocus /><br />
+                <span>Your City:</span><input type="city" name="city" value="" /><br />
+                <span>Your Email:</span><input type="email" name="email"value="" /><br />
+                <span>Message:</span><textarea name="message" rows="15" cols="65"/></textarea>
+            </form>
+            <input form="contactForm" type="submit" name="send" id="send" value="send"/>
+            <input form="contactForm" type="button" name="clear" id="clear" value="clear"/>
+        </article>
+        <aside class="formAside">
+            <article>
+                <h2>Contacts</h2>
+                <ul>
+                    <li><i>Country:<span>USA</span></i></li>
+                    <li><i>City:<span>San Diego</span></i></li>
+                    <li><i>Telphone:<span>+354 563560</span></i></li>
+                    <li><i>Email:<span>progress@mail.com</span></i></li>
+            	</ul>
+            </article>
+            <article>
+                <h2>Miscellaneous</h2>
+                <p><i>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est</i></p>
+            </article>
+   		</aside>
+  </section>
+
+  <footer id="footer">
+    <ul class="ftr">
+      <li>Why Us?</li>
+        <li>Lorem ipsum dolor sit</li>
+        <li>Dmet, consectetur</li>
+        <li>Adipisicing elit eiusmod</li>
+        <li>Tempor incididunt ut</li>
+	</ul>
+    <ul class="ftr">
+        <li>Address</li>
+        <li>Country:<span>USA</span></li>
+        <li>City:<span>San Diego</span></li>
+        <li>Phone:<span>8 800 154-45-67</span></li>
+        <li>Email:<span>progress@mail.com</span></li>
+    </ul>
+    <ul class="ftr">
+        <li>Follow Us</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>LinkedIn</li>
+        <li>Delicious</li>
+    </ul>
+    <ul class="ftr">
+        <li>Newsletter</li>
+        <li><input form="contactForm" type="email" name="emial" placeholder="Type Your Email Here"/></li>
+        <li><input form="contactForm" type="submit" value="Subscribe" name="submit"/></li>
+    </ul>
+    <article class="other">
+        <p><span>Website Template</span> by TemplateMonster.com<br />
+        <span>3D Models</span> provided by Templates.com</p>
+    </article>
+   </footer>
+</div>
+<script>
+	var page=4;
+	var oForm=document.getElementById("contactForm"),
+	oInput=oForm.getElementsByTagName("input"),
+	oText=oForm.getElementsByTagName("textarea")[0],
+	oClear=document.getElementById("clear");
+	
+	oClear.onclick=function(){
+	for(var i=0;i<oInput.length;i++){
+		oInput[i].value="";
+		}
+		oText.value="";
+	}
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
