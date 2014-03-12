@@ -1,4 +1,5 @@
 var ip = [];
+ip.length = 20;
 var jin = {};
 jin.index = function(req, res) {
 	var bl = ip.some(function (item, index, arry) {
@@ -23,6 +24,7 @@ jin.photo = function(req, res) {
 	res.render('myphoto', {
 		show: "leftShow",
 		resume: "resume",
+		firefoxBug: "firefoxBug",
 		back: "back"
 	});
 };
