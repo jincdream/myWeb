@@ -65,6 +65,7 @@ Book.prototype.upP = function(hBook, sBook) {
 		span10 = $('div.span10');
 	back.click(function(event) {
 		event.preventDefault();
+		$('.pLeft').attr("data-l","no");
 		$.get('/back', function(data) {
 			span10.html(data);
 		});
@@ -72,13 +73,14 @@ Book.prototype.upP = function(hBook, sBook) {
 	linkS.click(function(event) {
 		event.preventDefault();
 		$('div.p-r').animate({
-			top: '-100%'
-		}, 400, function() {
+			"opacity":"0"
+		}, 1, function() {
 			$.get('p/listS', function(data) {
 				$('div.pRight').html(data).css('paddingTop', '16%');
 				sheji();
 			});
 		});
+		$('div.pLeft').attr("data-l","yes");//辅助响应式
 	});
 	linkY.click(function(event) {
 		event.preventDefault();
@@ -143,7 +145,7 @@ Book.prototype.upP = function(hBook, sBook) {
 
 			var i = index,
 				r= $(this);
-			r.mouseover(function(event) {
+			r.on('click mouseover',function(event) {
 				img.each(function(index, el) {
 					$(this).css({
 						'transform': 'translateY(-' + i * 100 + '%)'

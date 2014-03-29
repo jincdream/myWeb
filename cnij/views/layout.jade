@@ -1,9 +1,10 @@
 doctype html
 html(lang="zh-cn")
 	head
-		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width ,initial-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="maximum-scale=1, width=device-width ,initial-scale=1.0, user-scalable=no" />
+		<meta content="telephone=no" name="format-detection">
 		title 岑锦超的个人主页
-		<link rel="shortcut icon" href="/images/favicon.ico" />
+		link(rel='shortcut icon',href='/images/favicon.ico')
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		block css
 	body(class='#{firefoxBug}')
@@ -24,11 +25,6 @@ html(lang="zh-cn")
 					li
 						a.blockA(href = '/r') 
 							div.ui Music
-							i.icon-right
-							div.word Doing
-					li
-						a.blockA(href = '/r') 
-							div.ui Other
 							i.icon-right
 							div.word Doing
 					li(class='#{back}')
