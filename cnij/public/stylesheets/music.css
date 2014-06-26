@@ -1,0 +1,133 @@
+body,a,p,div,h1,h2,h3,ul,li,article,img{
+	padding: 0;
+	margin: 0;
+	border: none;
+	list-style: none;
+	text-decoration:none;
+}
+html{
+    font-size:62.5%; /* 10÷16=62.5% */
+    }
+p{
+	font-size:14px;
+	font-size:1.4rem;
+}
+html,body,.shade{
+	width: 100%;
+	height: 100%;
+}
+body {
+	position:relative;
+  	font:"Lucida Grande", Helvetica, Arial, sans-serif;
+  	font-size:12px;
+    font-size:1.2rem ; /* 12÷10=1.2 */
+}
+a {
+  color: #242424;
+}
+.animate{
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+}
+/*canvas*/
+#canvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+#audio{
+	display: none;
+	height:0;
+}
+.box{
+	height:100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction:column;
+	flex-direction:column;
+}
+.box div{
+	position: relative;
+}
+.flex-a{
+	overflow:hidden;
+	height:50%;
+	position:relative;
+}
+.flex-b{
+	height:80px;
+	background-color: rgba(255,255,255,0.3);
+}
+.flex-c{
+	-webkit-flex:1;
+	flex:1;
+	overflow-y:scroll;
+}
+.flex-a .bg{
+	position:absolute;
+	opacity: 0.5;
+	-webkit-filter:blur(5px);
+	filter:blur(5px);
+}
+.flex-a .cover{
+	width:50%;
+	max-width: 150px;
+	border:2px #fff solid;
+	position:relative;
+	box-shadow: 0 0 15px rgba(255,255,255,0.8);
+	left:50%;
+	top:50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.process,.ing{
+	position: absolute;
+	top: 0;
+	width:100%;
+	height:5px;
+	background-color: #fff;
+}
+.ing{
+	width:12px;
+}
+.point{
+	top:-8px;
+	border-radius: 50%;
+	position: absolute;
+	-webkit-transform: translateX(10px);
+	-moz-transform: translateX(10px);
+	-ms-transform: translateX(10px);
+	-o-transform: translateX(10px);
+	transform: translateX(10px);
+	height:12px;
+	width:12px;
+	background-color: #000;
+}
+.control{
+	height:50px;
+	margin:10px auto 0;
+	width:160px;
+}
+.control li{
+	overflow: hidden;
+	height:30px;
+	width:30px;
+	float:left;
+	margin-right: 25px;
+}
+#play{
+	height:50px;
+	width:50px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+#next{
+	margin-right: 0;
+}

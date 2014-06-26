@@ -1,0 +1,27 @@
+doctype html
+html(lang="zh-cn")
+	head
+		<meta name="viewport" content="maximum-scale=1, width=device-width ,initial-scale=1.0, user-scalable=no, minimal-ui" />
+		<meta content="telephone=no" name="format-detection" />
+		link(rel='stylesheet', href='/stylesheets/music.css')
+	body
+		canvas#canvas 你的浏览器不支持Canvas。
+		.box
+			.flex-a.animate
+				img.cover(src="images/lig.jpg")
+			.flex-b.animate
+				.process
+					.ing
+					.point
+				ul.control
+					li
+						canvas(width="30",height="30")
+					li#play.animate
+						canvas(width="50",height="50")
+					li#next
+
+			.flex-c.animate
+		audio#audio Your browser does not support the audio tag.
+			source(src="/mu/LetItGo.mp3",type="audio/mpeg")
+		script(src='http://s1.bdstatic.com/r/www/cache/static/jquery/jquery-1.10.2.min_f2fb5194.js')
+		script(src='javascripts/music.js')

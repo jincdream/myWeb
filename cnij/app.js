@@ -35,6 +35,7 @@ app.get('/jiu', routes.jin.jiu);
 app.get('/back', routes.jin.back);
 app.get('/p/listS',routes.jin.listS);
 app.get('/p/listY',routes.jin.listY);
+app.get('/music',routes.jin.music);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

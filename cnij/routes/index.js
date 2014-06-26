@@ -43,5 +43,8 @@ jin.listY = function(req, res) {
 jin.back = function(req,res){
 	res.render('back');
 };
+jin.music = function(req,res){
+	res.render('music');
+};
 /*(res.sendfile('/demo/myWeb/cnij/views/jiu.html');*/
 exports.jin = jin;
